@@ -1,0 +1,17 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local upload/output folders
+uploads/
+outputs/
+final_submission/
+
+# Large model files
+models/best.pt
+
+# OS-specific files
+.DS_Store

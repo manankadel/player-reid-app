@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Processing Result</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background-color: #f4f4f9; color: #333; text-align: center; padding-top: 2rem; }
+        .container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 900px; margin: auto; }
+        h1 { color: #0d1117; }
+        video { max-width: 100%; border-radius: 8px; margin-top: 1rem; }
+        a { display: inline-block; margin-top: 1.5rem; background-color: #0969da; color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; }
+        a:hover { background-color: #0c80f7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Processing Complete!</h1>
+        <video controls>
+            <source src="{{ url_for('static', filename=video_file) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <a href="/">Process Another Video</a>
+    </div>
+</body>
+</html>

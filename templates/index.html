@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Player Re-ID</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background-color: #f4f4f9; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); text-align: center; max-width: 500px; width: 90%; }
+        h1 { color: #0d1117; }
+        input[type="file"] { margin: 1rem 0; }
+        button { background-color: #238636; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+        button:hover { background-color: #2ea043; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚽ Player Re-Identification</h1>
+        <p>Upload a sports video (.mp4) to detect, track, and re-identify players.</p>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="video" accept="video/mp4" required>
+            <br>
+            <button type="submit">Process Video</button>
+        </form>
+    </div>
+</body>
+</html>

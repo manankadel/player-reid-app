@@ -1,0 +1,10 @@
+torch
+torchvision
+opencv-python
+ultralytics
+numpy
+scikit-image
+scipy
+matplotlib
+Flask
+gunicorn
