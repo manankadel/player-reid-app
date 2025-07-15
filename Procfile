@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn --worker-class gevent --worker-tmp-dir /dev/shm --bind 0.0.0.0:10000 app:app
